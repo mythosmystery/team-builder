@@ -5,30 +5,23 @@ const Team = require("./lib/team");
 const Prompt = require("./lib/prompt");
 const fs = require("fs");
 const util = require("util");
-const inquirer = require("inquirer");
 
 const writeFileAsync = util.promisify(fs.writeFile);
 const prompt = new Prompt();
 const employees = [];
 
-function init() {
-   getManager();
+function getManager() {
+   prompt.managerPrompt().then((res) => {
+      employees.push(new Manager(res.name, res.id, res.email, res.officeNum));
+      menu();
+   });
 }
-
-init();
-
 function menu() {   
       prompt.menuPrompt().then((res) => {
          if (res.menu == "Engineer") getEngineer();
          if (res.menu == "Intern") getIntern();
          if (res.menu == "Finish") generateTeam();
       });
-}
-function getManager() {
-   prompt.managerPrompt().then((res) => {
-      employees.push(new Manager(res.name, res.id, res.email, res.officeNum));
-      menu();
-   });
 }
 function getIntern() {
    prompt.internPrompt().then((res) => {
@@ -53,3 +46,5 @@ function generateHTML(team) {
       .then(() => console.log("write ok"))
       .catch((err) => console.error(err));
 }
+
+getManager();
