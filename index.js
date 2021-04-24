@@ -1,6 +1,7 @@
 const Manager = require("./lib/manager");
 const Engineer = require("./lib/engineer");
 const Intern = require("./lib/intern");
+const Team = require("./lib/team")
 const fs = require("fs");
 const util = require("util");
 const inquirer = require("inquirer");
@@ -9,14 +10,6 @@ const writeFileAsync = util.promisify(fs.writeFile);
 
 const employees = [];
 
-function test() {
-   const testMan = new Manager("Steve", 01, "steve@test.net", 1);
-   console.log(testMan);
-   const testEngineer = new Engineer("Joe", 02, "joe@test.net", "joetest");
-   console.log(testEngineer);
-   const testIntern = new Intern("Bob", 03, "bob@test.net", "OSU");
-   console.log(testIntern);
-}
 function init() {
    getManager();
 }
@@ -58,10 +51,18 @@ function getEngineer() {
 }
 function generateTeam() {
    console.log("generating Team...");
-   printEmployees();      
+   const team = new Team();
+   generateHTML(team);             
+}
+function generateHTML(team){    
+    const HTML = team.createBody(team.createCards(employees));
+    //console.log(HTML);
+    writeFileAsync("index.html", HTML)
+    .then(() => console.log("write ok"))
+    .catch((err) => console.error(err)); 
 }
 function printEmployees() {
-   for (employee of employees) {
+   for (const employee of employees) {
       console.log(employee);
    }
 }
