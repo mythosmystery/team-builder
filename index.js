@@ -21,15 +21,16 @@ function menu() {
    inquirer
       .prompt([
          {
-            type: "number",
-            message: `\n 1.) Add engineer \n 2.) Add intern \n 3.) Finish`,
+            type: "list",
+            message: `Select the next team member's job or finish building team:`,
             name: "menu",
+            choices: ["Engineer", "Intern", "Finish"],
          },
       ])
       .then((res) => {
-         if (res.menu == 1) getEngineer();
-         if (res.menu == 2) getIntern();
-         if (res.menu == 3) generateTeam();
+         if (res.menu == "Engineer") getEngineer();
+         if (res.menu == "Intern") getIntern();
+         if (res.menu == "Finish") generateTeam();
       });
 }
 function getManager() {
