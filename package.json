@@ -1,0 +1,31 @@
+{
+  "name": "team-builder",
+  "version": "1.0.0",
+  "description": "An app to display information about different team members in a company",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mythosmystery/team-builder.git"
+  },
+  "keywords": [
+    "team",
+    "builder"
+  ],
+  "author": "Hunter Barton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mythosmystery/team-builder/issues"
+  },
+  "homepage": "https://github.com/mythosmystery/team-builder#readme",
+  "dependencies": {
+    "fs": "*",
+    "inquirer": "^8.0.0",
+    "util": "^0.12.3"
+  }
+}
