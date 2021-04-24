@@ -17,17 +17,8 @@ function init() {
 
 init();
 
-function menu() {
-   inquirer
-      .prompt([
-         {
-            type: "list",
-            message: `Select the next team member's job or finish building team:`,
-            name: "menu",
-            choices: ["Engineer", "Intern", "Finish"],
-         },
-      ])
-      .then((res) => {
+function menu() {   
+      prompt.menuPrompt().then((res) => {
          if (res.menu == "Engineer") getEngineer();
          if (res.menu == "Intern") getIntern();
          if (res.menu == "Finish") generateTeam();
