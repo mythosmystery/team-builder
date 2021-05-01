@@ -27,7 +27,7 @@
     If you would like to add to this project, you can [follow me on GitHub](https://github.com/mythosmystery).  
 
     ## Tests
-    To test this software run 'npm run test" then the file to test.
+    To test this software run 'npm run test"
 
     ## Questions:
     If you have any questions about this project, you can reach me [on GitHub](https://github.com/mythosmystery) or via email at axiysfire@gmail.com.
