@@ -10,18 +10,18 @@ const writeFileAsync = util.promisify(fs.writeFile);
 const prompt = new Prompt();
 const employees = [];
 
+function menu() {   
+   prompt.menuPrompt().then((res) => {
+      if (res.menu == "Engineer") getEngineer();
+      if (res.menu == "Intern") getIntern();
+      if (res.menu == "Finish") generateTeam();
+   });
+}
 function getManager() {
    prompt.managerPrompt().then((res) => {
       employees.push(new Manager(res.name, res.id, res.email, res.officeNum));
       menu();
    });
-}
-function menu() {   
-      prompt.menuPrompt().then((res) => {
-         if (res.menu == "Engineer") getEngineer();
-         if (res.menu == "Intern") getIntern();
-         if (res.menu == "Finish") generateTeam();
-      });
 }
 function getIntern() {
    prompt.internPrompt().then((res) => {
