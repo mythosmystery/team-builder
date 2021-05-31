@@ -1,10 +1,11 @@
     
 
 #  Title: Team Builder
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ### Project Created By: Hunter Barton
-### Description: A command line app that creates an HTML page with information about employees on a team.
-**
+## Description
+A command line app that creates an HTML page with information about employees on a team.
+***
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
@@ -12,8 +13,7 @@
 * [Contributing](#contributing)
 * [Tests](#tests)
 * [Questions](#questions)
-
-**
+***
 ## Installation 
 Simply install node.js then navigate to the repository folder and run 'npm install' then run 'node index.js.
 
