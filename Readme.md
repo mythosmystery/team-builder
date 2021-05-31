@@ -1,34 +1,33 @@
     
 
-    #  Title: Team Builder
-    [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-    ### Project Created By: Hunter Barton
-    ### Description: A command line app that creates an HTML page with information about employees on a team.
-    **
-    ## Table of Contents
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [License](#license) 
-    * [Contributing](#contributing)
-    * [Tests](#tests)
-    * [Questions](#questions)
-    
-    **
-    ## Installation 
-    Simply install node.js then navigate to the repository folder and run 'npm install' then run 'node index.js.
+#  Title: Team Builder
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+### Project Created By: Hunter Barton
+### Description: A command line app that creates an HTML page with information about employees on a team.
+**
+## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license) 
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
 
-    ## Usage
-    Run 'node index.js' then enter information about the team manager, then you will be prompted to either enter an engineer or an intern, or finish building the team. Enter all employees on the team and select finish. An HTML file will be created to display the whole team.
+**
+## Installation 
+Simply install node.js then navigate to the repository folder and run 'npm install' then run 'node index.js.
 
-    ## License 
-    [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+## Usage
+Run 'node index.js' then enter information about the team manager, then you will be prompted to either enter an engineer or an intern, or finish building the team. Enter all employees on the team and select finish. An HTML file will be created to display the whole team.
 
-    ## Contributing
-    If you would like to add to this project, you can [follow me on GitHub](https://github.com/mythosmystery).  
+## License 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-    ## Tests
-    To test this software run 'npm run test"
+## Contributing
+If you would like to add to this project, you can [follow me on GitHub](https://github.com/mythosmystery).  
 
-    ## Questions:
-    If you have any questions about this project, you can reach me [on GitHub](https://github.com/mythosmystery) or via email at axiysfire@gmail.com.
-  
+## Tests
+To test this software run 'npm run test"
+
+## Questions:
+If you have any questions about this project, you can reach me [on GitHub](https://github.com/mythosmystery) or via email at axiysfire@gmail.com.
